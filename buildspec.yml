@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm i npm@latest -g
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+      - npm install
+  pre_build:
+    commands:
+      - aws s3 cp $PRODUCTLISTS_BUCKET_URI/$DATA_FILE_NAME _data/products.json
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 sync --delete ./_site s3://$PRODUCT_LISTS_BUILD_BUCKET_NAME --acl public-read

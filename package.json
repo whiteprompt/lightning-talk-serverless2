@@ -1,35 +1,24 @@
 {
-  "name": "todo-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "9905-r-d-serverless-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "aws-appsync": "^2.0.1",
-    "aws-appsync-react": "^2.0.1",
-    "graphql-tag": "^2.10.1",
-    "react": "^16.11.0",
-    "react-apollo": "2.5.8",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "@11ty/eleventy": "^0.10.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteprompt/9905-R-D-serverless-2.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whiteprompt/9905-R-D-serverless-2/issues"
+  },
+  "homepage": "https://github.com/whiteprompt/9905-R-D-serverless-2#readme"
 }

@@ -1,0 +1,122 @@
+[
+  {
+    "SKU": "1",
+    "Name": "Product 1",
+    "Description": "Description for product 1",
+    "Price": "$ 100,00"
+  },
+  {
+    "SKU": "2",
+    "Name": "Product 2",
+    "Description": "Description for product 2",
+    "Price": "$ 200,00"
+  },
+  {
+    "SKU": "3",
+    "Name": "Product 3",
+    "Description": "Description for product 3",
+    "Price": "$ 300,00"
+  },
+  {
+    "SKU": "4",
+    "Name": "Product 4",
+    "Description": "Description for product 4",
+    "Price": "$ 400,00"
+  },
+  {
+    "SKU": "5",
+    "Name": "Product 5",
+    "Description": "Description for product 5",
+    "Price": "$ 500,00"
+  },
+  {
+    "SKU": "6",
+    "Name": "Product 6",
+    "Description": "Description for product 6",
+    "Price": "$ 600,00"
+  },
+  {
+    "SKU": "7",
+    "Name": "Product 7",
+    "Description": "Description for product 7",
+    "Price": "$ 700,00"
+  },
+  {
+    "SKU": "8",
+    "Name": "Product 8",
+    "Description": "Description for product 8",
+    "Price": "$ 800,00"
+  },
+  {
+    "SKU": "9",
+    "Name": "Product 9",
+    "Description": "Description for product 9",
+    "Price": "$ 900,00"
+  },
+  {
+    "SKU": "10",
+    "Name": "Product 10",
+    "Description": "Description for product 10",
+    "Price": "$ 1000,00"
+  },
+  {
+    "SKU": "11",
+    "Name": "Product 11",
+    "Description": "Description for product 11",
+    "Price": "$ 1100,00"
+  },
+  {
+    "SKU": "12",
+    "Name": "Product 12",
+    "Description": "Description for product 12",
+    "Price": "$ 1200,00"
+  },
+  {
+    "SKU": "13",
+    "Name": "Product 13",
+    "Description": "Description for product 13",
+    "Price": "$ 1300,00"
+  },
+  {
+    "SKU": "14",
+    "Name": "Product 14",
+    "Description": "Description for product 14",
+    "Price": "$ 1400,00"
+  },
+  {
+    "SKU": "15",
+    "Name": "Product 15",
+    "Description": "Description for product 15",
+    "Price": "$ 1500,00"
+  },
+  {
+    "SKU": "16",
+    "Name": "Product 16",
+    "Description": "Description for product 16",
+    "Price": "$ 1600,00"
+  },
+  {
+    "SKU": "17",
+    "Name": "Product 17",
+    "Description": "Description for product 17",
+    "Price": "$ 1700,00"
+  },
+  {
+    "SKU": "18",
+    "Name": "Product 18",
+    "Description": "Description for product 18",
+    "Price": "$ 1800,00"
+  },
+  {
+    "SKU": "19",
+    "Name": "Product 19",
+    "Description": "Description for product 19",
+    "Price": "$ 1900,00"
+  },
+  {
+    "SKU": "20",
+    "Name": "Product 20",
+    "Description": "Description for product 20",
+    "Price": "$ 2000,00"
+  }
+]

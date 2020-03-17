@@ -1,0 +1,22 @@
+POST https://w9l6qkyn2h.execute-api.us-east-1.amazonaws.com/dev/auth
+Content-Type: application/json
+
+{
+  "user": "little_bird",
+  "password": "Passw0rd1!"
+}
+
+###
+PUT https://bei31lxgii.execute-api.us-east-1.amazonaws.com/dev/demo/productlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibGl0dGxlX2JpcmQiLCJwYXNzd29yZCI6IlBhc3N3MHJkMSEiLCJpYXQiOjE1Nzk3OTcwNjZ9.a47KzZtNUH8oSdj_XK6PmxUeNOy2353Trd5CjsmdfHU
+Content-Type: text/csv
+
+< productlist.csv
+
+###
+
+PUT https://w9l6qkyn2h.execute-api.us-east-1.amazonaws.com/dev/demo/webshops
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoibGl0dGxlX2JpcmQiLCJwYXNzd29yZCI6IlBhc3N3MHJkMSEiLCJpYXQiOjE1Nzk3OTcwNjZ9.a47KzZtNUH8oSdj_XK6PmxUeNOy2353Trd5CjsmdfHU
+
+###
