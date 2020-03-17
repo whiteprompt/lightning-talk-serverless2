@@ -1,0 +1,24 @@
+auth:
+  handler: handlers/authHandler.auth
+  events:
+    - http:
+        path: auth
+        method: post
+
+createProductlistS3:
+  handler: handlers/s3Handler.productlists.upload
+  events:
+    - http:
+        path: productlists
+        method: put
+
+createProductlistsBuild:
+  handler: handlers/buildHandler.productlists.build
+  timeout: 600
+  events:
+    - s3:
+        bucket: "${self:custom.PRODUCT_LISTS_BUCKET_NAME}"
+        event: s3:ObjectCreated:*
+        existing: true
+        rules:
+          - suffix: .json

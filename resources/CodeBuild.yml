@@ -1,0 +1,35 @@
+Type: AWS::CodeBuild::Project
+Properties:
+  ServiceRole: !GetAtt CodeBuildRole.Arn
+  Artifacts:
+    Location: "${self:custom.BUILD.ARTIFACTS_BUCKET_NAME}"
+    Name: build
+    NamespaceType: BUILD_ID
+    Packaging: NONE
+    Type: S3
+  Environment:
+    Type: LINUX_CONTAINER
+    ComputeType: BUILD_GENERAL1_SMALL
+    Image: aws/codebuild/standard:3.0
+    EnvironmentVariables:
+      - Name: PRODUCT_LISTS_BUILD_BUCKET_NAME
+        Value: "${self:custom.PRODUCT_LISTS_BUILD_BUCKET_NAME}"
+  LogsConfig:
+    CloudWatchLogs:
+      Status: ENABLED
+      GroupName: "${self:custom.BUILD.LOGS_GROUP_NAME}"
+      StreamName: "${self:custom.BUILD.LOGS_STREAM_NAME}"
+  Source:
+    Location: "${self:custom.BUILD.GITHUB_REPO}"
+    SourceIdentifier: Repo
+    Type: GITHUB
+  SourceVersion: "${self:custom.BUILD.GITHUB_BRANCH}"
+  TimeoutInMinutes: 10
+  Triggers:
+    Webhook: true
+    FilterGroups:
+      - - Type: EVENT
+          Pattern: PUSH
+  Cache:
+    Type: S3
+    Location: "${self:custom.BUILD.CACHE_BUCKET_NAME}"

@@ -1,0 +1,6 @@
+Type: AWS::S3::Bucket
+Properties:
+  BucketName: "${self:custom.PRODUCT_LISTS_BUILD_BUCKET_NAME}"
+  WebsiteConfiguration:
+    ErrorDocument: index.html
+    IndexDocument: index.html

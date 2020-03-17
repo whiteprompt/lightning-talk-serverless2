@@ -1,0 +1,17 @@
+POST https://YOUR-OWN-API-GATEWAY-URL/dev/auth
+Content-Type: application/json
+
+{
+  "user": "the value of your dotenv's ADMIN_USER",
+  "password": "the value of your dotenv's ADMIN_PASSWORD"
+}
+
+###
+
+PUT https://YOUR-OWN-API-GATEWAY-URL/dev/productlists
+Authorization: Bearer the-jwt-you-get-from-the-request-above
+Content-Type: text/csv
+
+< productlist.csv
+
+
