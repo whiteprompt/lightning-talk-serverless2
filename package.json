@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "an event driven architecture approach",
   "dependencies": {
-    "aws-sdk": "^2.507.0",
+    "aws-sdk": "^2.814.0",
     "csv": "^5.3.1",
     "jsonwebtoken": "^8.5.1",
     "node-pre-gyp": "^0.14.0",
